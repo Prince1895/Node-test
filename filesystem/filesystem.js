@@ -18,9 +18,11 @@ const fs=require('fs');
 // })
 
 // fs.appendFileSync("./abes.txt","PHD")
-fs.appendFile("./abes.txt","Prince",(err)=>{
-    if(err){
-        console.log(err);
-    }
-})
+// fs.appendFile("./abes.txt","Prince",(err)=>{
+//     if(err){
+//         console.log(err);
+//     }
+// })
+
+fs.cpSync("./abes.txt","./A1.txt")
 
