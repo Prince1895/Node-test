@@ -25,4 +25,9 @@ const fs=require('fs');
 // })
 
 fs.cpSync("./abes.txt","./A1.txt")
+fs.cp("./abes.txt","./A1.txt",(err)=>{
+    if(err){
+        console.Console.log(err)
+    }
+})
 
