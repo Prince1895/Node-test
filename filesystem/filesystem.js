@@ -17,3 +17,10 @@ const fs=require('fs');
 // }
 // })
 
+// fs.appendFileSync("./abes.txt","PHD")
+fs.appendFile("./abes.txt","Prince",(err)=>{
+    if(err){
+        console.log(err);
+    }
+})
+
