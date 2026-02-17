@@ -41,5 +41,7 @@
 //     }
 // })
 
+const os= require('os');
+console.log("System platform", os.platform());
 
 
