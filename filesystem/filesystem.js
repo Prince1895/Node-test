@@ -24,10 +24,20 @@ const fs=require('fs');
 //     }
 // })
 
-fs.cpSync("./abes.txt","./A1.txt")
-fs.cp("./abes.txt","./A1.txt",(err)=>{
+// fs.cpSync("./abes.txt","./A1.txt")
+// fs.cp("./abes.txt","./A1.txt",(err)=>{
+//     if(err){
+//         console.Console.log(err)
+//     }
+// })
+
+// fs.unlinkSync("./abes.txt");
+fs.unlink("./A1.txt",(err)=>{
     if(err){
-        console.Console.log(err)
+        console.log(err);
+    }
+    else{
+        console.log("file delete succesfully")
     }
 })
 
